@@ -49,7 +49,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Test/Mock
 %{perl_vendorlib}/Test/Mock/*.pm
-%{perl_vendorlib}/Test/Mock/LWP
-%{perl_vendorlib}/Test/Mock/HTTP
+%dir %{perl_vendorlib}/Test/Mock/LWP
+%{perl_vendorlib}/Test/Mock/LWP/*.pm
+%dir %{perl_vendorlib}/Test/Mock/HTTP
+%{perl_vendorlib}/Test/Mock/HTTP/*.pm
 %{_mandir}/man3/*
