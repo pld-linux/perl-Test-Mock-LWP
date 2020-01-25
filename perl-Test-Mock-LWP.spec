@@ -4,7 +4,6 @@
 #
 %define		pdir	Test
 %define		pnam	Mock-LWP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::Mock::LWP - Easy mocking of LWP packages
 Name:		perl-Test-Mock-LWP
 Version:	0.06
